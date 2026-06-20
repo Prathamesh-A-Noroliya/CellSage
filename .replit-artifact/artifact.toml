@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "CellSage AI"
+version = "1.0.0"
+id = "artifacts/cellsage"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22367
+
+[services.development]
+run = "pnpm --filter @workspace/cellsage run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cellsage", "run", "build" ]
+publicDir = "artifacts/cellsage/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22367"
+BASE_PATH = "/"
