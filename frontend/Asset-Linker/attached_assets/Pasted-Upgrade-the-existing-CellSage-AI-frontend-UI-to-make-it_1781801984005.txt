@@ -1,0 +1,586 @@
+Upgrade the existing CellSage AI frontend UI to make it look like a premium enterprise-grade AI SaaS manufacturing platform with glassmorphism, interesting backgrounds, clean navigation, and subtle micro-animations.
+
+IMPORTANT CREDIT-SAVING RULES:
+Do not rebuild the whole project from scratch.
+Do not create a new Vite app.
+Do not reinstall packages unless a package is missing.
+Do not change the core folder structure.
+Do not rewrite every file unnecessarily.
+First inspect the existing code, then update only the files needed for visual improvement.
+Preserve all existing routes, mock data, API functions, and page logic.
+Focus only on high-impact UI/UX upgrades.
+
+VERY IMPORTANT CONTENT RULE:
+Do not mention “IIT” anywhere in the website UI, code text, labels, headings, badges, comments, page content, or metadata.
+The website should look competition-ready and enterprise-grade, but it must not display or reference IIT by name.
+
+PROJECT:
+CellSage AI — Agentic AI Investigator for EV Battery Manufacturing Root Cause Analysis.
+
+GOAL:
+The current UI looks too simple/basic. Upgrade it so it feels like a serious premium AI manufacturing intelligence platform.
+
+Target visual quality:
+OpenAI Dashboard + Palantir Foundry + Linear + Notion + industrial analytics command center.
+
+The app must look:
+Premium
+Modern
+Clean
+Enterprise-grade
+Hackathon-demo-ready
+Professional
+Visually impressive
+Easy to navigate
+Simple to understand
+Polished enough for judges, mentors, and technical reviewers
+
+DO NOT MAKE IT:
+Generic
+Flat
+Plain
+Student-project looking
+Overcrowded
+Hard to navigate
+Too colorful
+Cartoonish
+Messy
+Over-animated
+Slow
+Distracting
+
+GLOBAL VISUAL UPGRADE
+
+Upgrade the full app theme using:
+
+1. Dark futuristic SaaS background
+2. Glassmorphism cards
+3. Subtle gradient borders
+4. Background radial glows
+5. Soft grid/noise overlay using CSS only
+6. Premium shadows
+7. Better spacing and hierarchy
+8. Better hover states
+9. Refined typography
+10. Better section separation
+11. Lightweight micro-animations
+
+Use Tailwind CSS and normal CSS only.
+Do not add Framer Motion.
+Do not add animation libraries.
+Do not add unnecessary packages.
+Use CSS transitions, keyframes, Tailwind hover classes, and transform effects.
+
+BACKGROUND STYLE:
+Use a deep navy/black base:
+#020617
+#0B1220
+#111827
+
+Add CSS-based background effects:
+
+* Large blurred blue/cyan radial gradient glow in top-left
+* Soft emerald/blue glow in bottom-right
+* Subtle grid pattern using CSS
+* Optional very subtle noise/texture overlay using CSS
+* Background should feel like an AI command center, not a plain dark screen
+
+GLASSMORPHISM STYLE:
+Use cards like:
+bg-white/5
+border border-white/10
+backdrop-blur-xl
+shadow-2xl
+rounded-2xl
+
+Use gradient borders where useful:
+border-white/10
+hover:border-blue-400/40
+hover:bg-white/[0.07]
+
+PRIMARY COLORS:
+Main background: #020617
+Deep navy: #0B1220
+Card glass: rgba(255,255,255,0.05)
+Primary blue: #3B82F6
+Cyan accent: #06B6D4
+Emerald accent: #22C55E
+Amber warning: #F59E0B
+Red critical: #EF4444
+Text primary: #FFFFFF
+Text secondary: #94A3B8
+Muted text: #64748B
+
+MICRO-ANIMATION REQUIREMENTS
+
+Add premium but lightweight micro-animations.
+
+Use animations such as:
+
+1. Fade-in on page content
+2. Soft slide-up on cards
+3. Hover lift on cards
+4. Subtle glow on CTA buttons
+5. Smooth active navigation indicator
+6. Progress bar fill animation
+7. Floating hero mini-cards
+8. Slow background glow movement
+9. Table row hover animation
+10. Chat message entrance animation
+11. Agent pipeline step highlight animation
+12. Smooth button hover scale
+
+Animation rules:
+
+* Keep animations subtle and professional.
+* Do not make animations childish.
+* Do not make animations too fast or distracting.
+* Do not create performance-heavy effects.
+* Do not animate every small element aggressively.
+* Prefer duration between 200ms and 700ms.
+* Use CSS keyframes only where needed.
+* Add transition-all, duration-300, ease-out where useful.
+* Ensure mobile performance remains smooth.
+
+Add these CSS utilities in index.css if needed:
+
+* animate-fade-in
+* animate-slide-up
+* animate-float
+* animate-pulse-soft
+* animate-glow
+* glass-card
+* premium-border
+* bg-grid
+
+Example animation behavior:
+
+* Landing hero text fades/slides in.
+* Hero dashboard preview gently floats.
+* Mini metric cards float subtly.
+* Dashboard cards lift slightly on hover.
+* Sidebar active item smoothly glows.
+* Confidence bar fills smoothly.
+* Chat response slides in.
+* Report sections fade in softly.
+* Architecture cards highlight on hover.
+
+TYPOGRAPHY UPGRADE:
+Use strong visual hierarchy:
+
+* Landing headline should be bold, large, and premium.
+* Page titles should be clean and compact.
+* Dashboard labels should be small uppercase tracking-wide.
+* Body text should be readable and not too large.
+* Use tighter, professional spacing.
+
+NAVIGATION UPGRADE
+
+Improve Sidebar:
+
+* Make it glass/dark premium.
+* Add CellSage AI logo mark using CSS or Lucide icon.
+* Add subtitle: Agentic Manufacturing AI.
+* Highlight active route with blue/cyan gradient background.
+* Add smooth hover states.
+* Add animated active indicator.
+* Add bottom status card:
+  System Online
+  Mock API Ready
+  Evidence Engine Active
+
+Improve Navbar:
+
+* Make it glassmorphism.
+* Add page title and subtitle.
+* Add right-side badges:
+  Agentic RAG
+  Mock API Ready
+  EV Manufacturing
+* Keep it clean and responsive.
+* Add subtle fade/slide animation on load.
+
+HOME / LANDING PAGE UPGRADE
+
+The landing page must look outstanding, not basic.
+
+Upgrade hero section:
+
+* Full-screen premium hero layout.
+* Left side: strong text and CTAs.
+* Right side: advanced glass dashboard preview.
+* Add floating mini cards around the preview:
+  Confidence 91%
+  Evidence Sources 5
+  Root Cause Found
+  Report Ready
+* Add small trust/feature badges:
+  RAG Retrieval
+  Multi-Agent Reasoning
+  SOP Evidence
+  Manufacturing Intelligence
+
+Hero title:
+CellSage AI
+
+Hero subtitle:
+Agentic AI Investigator for EV Battery Manufacturing
+
+Hero description:
+Turn scattered SOPs, sensor logs, maintenance records, and historical failure reports into explainable root-cause intelligence within minutes.
+
+Buttons:
+Start Investigation
+View Dashboard
+
+Make buttons premium:
+Primary: blue/cyan gradient with subtle glow hover
+Secondary: glass outline with hover border glow
+
+Hero dashboard preview should show:
+Batch EV-1024
+Capacity Testing Failure
+Confidence 91%
+Primary Cause: Electrode coating thickness variation
+Evidence Chain:
+SOP-001 → Sensor Log → Maintenance Record → Historical Case
+Status: Investigation Completed
+
+Hero animations:
+
+* Hero title fade-in and slide-up
+* CTA buttons soft hover lift
+* Dashboard preview subtle floating animation
+* Mini cards slow floating animation
+* Background glow slow movement
+
+Add an impressive “AI Investigation Pipeline” section:
+Use horizontal or responsive cards:
+Ask Question
+Retrieve Evidence
+Analyze Sensors
+Compare History
+Identify Root Cause
+Generate Report
+
+Each step should have:
+Icon
+Title
+Short text
+Subtle hover lift
+Small connector arrow/line if possible
+
+Upgrade feature cards:
+Use glassmorphism cards with icons, hover effects, and small accent lines.
+Features:
+Root Cause Analysis
+RAG Knowledge Retrieval
+Historical Failure Analysis
+Automated Investigation Reports
+
+Architecture section:
+Improve the existing architecture diagram if present.
+Make it cleaner and more premium.
+Use grouped glass panels:
+Data Sources
+Agent Orchestration Layer
+RAG Pipeline
+Data & Storage
+Output Report
+
+Add agent cards:
+Orchestrator Agent
+RAG Retrieval Agent
+Sensor Analysis Agent
+Historical Analysis Agent
+Root Cause Agent
+Report Generation Agent
+
+Use arrows or connecting lines with CSS where possible.
+Keep it readable.
+Do not make it crowded.
+Add subtle hover glow to each architecture block.
+
+DASHBOARD PAGE UPGRADE
+
+Make the dashboard feel like an executive AI manufacturing command center.
+
+Top section:
+Add a premium page header:
+Manufacturing Investigation Command Center
+
+Subtitle:
+Real-time view of AI-assisted battery failure investigations, confidence scores, evidence chains, and corrective actions.
+
+Add top-right quick action buttons:
+New Investigation
+Generate Report
+
+Upgrade KPI cards:
+Use glassmorphism cards.
+Add icons.
+Add trend indicators.
+Add hover lift animation.
+Add subtle animated progress or accent line.
+KPI cards:
+Total Investigations: 128
+Average Confidence: 87%
+Critical Failures: 14
+Open Investigations: 9
+
+Add a “Current Priority Investigation” hero card:
+Batch EV-1024
+Capacity Testing Failure
+Severity: High
+Confidence: 91%
+Primary Cause: Electrode coating thickness variation
+Evidence Chain Strength: Strong
+Status: Completed
+
+Inside this card, show a mini timeline:
+Query Received → Evidence Retrieved → Root Cause Identified → Report Generated
+
+Timeline should have subtle animated active dots or hover glow.
+
+Improve dashboard grid:
+Left side:
+Current Priority Investigation
+Root Cause Card
+Evidence Card
+
+Right side:
+Recommendations Card
+Agent Status Card
+Confidence Breakdown Card
+
+Add Agent Status Card:
+Orchestrator Agent: Active
+RAG Retrieval Agent: Completed
+Sensor Analysis Agent: Completed
+Root Cause Agent: Completed
+Report Agent: Ready
+
+Add Confidence Breakdown Card:
+SOP Match: 94%
+Sensor Anomaly Match: 89%
+Historical Similarity: 87%
+Maintenance Correlation: 92%
+
+Use animated progress bars for confidence breakdown.
+
+Charts:
+Make Recharts visually premium:
+
+* Dark glass card containers
+* Better tooltips
+* Grid lines subtle
+* Labels readable
+* Use blue/cyan/emerald/amber colors
+* No overflow
+* Responsive containers
+* Hover effects on chart cards
+
+Chart cards:
+Failure Distribution
+Root Cause Categories
+Investigation Trends
+
+INVESTIGATION CHAT PAGE UPGRADE
+
+Make this look like a premium AI copilot workspace.
+
+Layout:
+Left large glass panel:
+Conversation thread
+
+Right glass panel:
+Investigation Intelligence Panel
+
+Top header:
+AI Investigation Workspace
+
+Subtitle:
+Ask manufacturing failure questions and receive evidence-backed root-cause analysis.
+
+Chat UI:
+
+* Better message bubbles.
+* User message aligned right with blue accent.
+* AI report shown as structured glass report card.
+* Chat messages should slide/fade in smoothly.
+* Add “Agent reasoning pipeline” visual:
+
+  1. Query Parsed
+  2. Evidence Retrieved
+  3. Sensor Data Checked
+  4. Historical Match Found
+  5. Root Cause Generated
+
+Agent pipeline should have subtle animated step indicators.
+
+Add suggested prompt chips:
+Why did Batch EV-1024 fail capacity testing?
+What caused high internal resistance in EV-1023?
+Which SOP was violated in EV-1018?
+Generate report for Batch EV-1024
+
+Right panel:
+Make it more premium:
+
+* Batch ID card
+* Confidence circular/progress visual
+* Severity badge
+* Evidence source chips
+* Primary cause
+* Recommended actions count
+* Agent status mini-list
+
+Add empty state:
+Before user submits, show:
+Start an investigation by asking about a failed EV battery batch.
+
+Keep mock fallback working.
+
+HISTORY PAGE UPGRADE
+
+Make the history table look enterprise-grade.
+
+Add page header:
+Historical Investigation Library
+
+Subtitle:
+Search, sort, and review previous AI-assisted manufacturing failure investigations.
+
+Add filter chips:
+All
+Completed
+Under Review
+High Severity
+Medium Severity
+
+Improve search bar:
+Glass input with search icon.
+
+Improve table:
+
+* Glass card container
+* Row hover animation
+* Severity badges
+* Confidence badges
+* Status badges
+* Better spacing
+* Mobile horizontal scroll
+
+Add summary mini cards above table:
+Total Records
+High Severity
+Average Confidence
+Under Review
+
+REPORT PAGE UPGRADE
+
+Make the report page look like a professional export-ready investigation report.
+
+Add page header:
+Investigation Report
+
+Subtitle:
+Evidence-backed EV battery manufacturing root-cause analysis.
+
+Top controls:
+Export Report
+Back to Investigation
+
+Report container:
+Use a premium report sheet style:
+
+* Dark glass outer container
+* Inner report sections with clear dividers
+* Metadata cards
+* Confidence badge
+* Severity badge
+* Evidence source list
+* Corrective and preventive action cards
+* Sections should fade/slide in softly
+
+Make it look suitable for PDF export but still premium in-app.
+
+Add report status strip:
+Report ID
+Batch ID
+Generated Date
+Confidence
+Severity
+Status
+
+VISUAL DETAILS TO ADD EVERYWHERE
+
+Add:
+
+* Gradient text for important headings.
+* Small uppercase section labels.
+* Premium badges.
+* Better icon usage with Lucide icons.
+* Smooth hover transitions.
+* Consistent rounded-2xl cards.
+* Consistent border-white/10.
+* Consistent card padding.
+* No overlapping.
+* No broken mobile view.
+* No giant plain empty background.
+* No excessive animations.
+* No mention of IIT anywhere.
+
+PERFORMANCE / CREDIT RULES
+
+To save Replit credits:
+
+1. Do not regenerate the entire application.
+2. Do not delete working logic.
+3. Do not replace mock data unless needed.
+4. Do not add unnecessary packages.
+5. Do not add authentication.
+6. Do not add backend code.
+7. Do not create multiple alternate versions.
+8. Focus only on UI files and CSS.
+9. Keep animations lightweight.
+10. Make targeted updates only.
+
+MOST IMPORTANT FILES TO UPDATE:
+
+* src/index.css
+* src/App.jsx if layout needs improvement
+* src/components/Sidebar.jsx
+* src/components/Navbar.jsx
+* src/pages/Home.jsx
+* src/pages/Dashboard.jsx
+* src/pages/Investigation.jsx
+* src/pages/History.jsx
+* src/pages/Report.jsx
+* chart components only if they look basic
+
+Do not modify services/api.js unless there is an error.
+Do not modify mockData.js unless better demo values are needed.
+
+FINAL CHECK
+
+After updating:
+
+1. Run the app.
+2. Check all routes:
+   /
+   /investigation
+   /dashboard
+   /history
+   /report
+3. Fix import errors.
+4. Fix layout issues.
+5. Fix mobile responsiveness.
+6. Fix any Recharts readability problems.
+7. Make sure no page is blank.
+8. Make sure navigation works.
+9. Search the visible UI text and code for “IIT” and remove it completely if found.
+10. Make sure UI looks premium and outstanding.
+
+FINAL EXPECTATION:
+The final frontend should look like a real enterprise AI manufacturing SaaS product, not a basic hackathon template. It should have a premium landing page, impressive dashboard, professional investigation workspace, polished history table, export-ready report page, glassmorphism, interesting background effects, and subtle micro-animations.

@@ -1,0 +1,62 @@
+[
+  {
+    "machine_name": "Coating Line A",
+    "issue": "Slot-die calibration overdue by 10 days. Beta gauge readings drifting +3% from target.",
+    "status": "Scheduled",
+    "maintenance_date": "2026-06-10"
+  },
+  {
+    "machine_name": "Coating Line B",
+    "issue": "Pump pressure fluctuation causing intermittent coating weight variation on anode side.",
+    "status": "In Progress",
+    "maintenance_date": "2026-06-12"
+  },
+  {
+    "machine_name": "Drying Oven Zone 2",
+    "issue": "Center thermocouple reading 6°C below setpoint. Suspected heating element degradation.",
+    "status": "Completed",
+    "maintenance_date": "2026-06-05"
+  },
+  {
+    "machine_name": "Calendering Press 1",
+    "issue": "Roll gap sensor miscalibrated. Porosity readings inconsistent with gravimetric samples.",
+    "status": "Scheduled",
+    "maintenance_date": "2026-06-15"
+  },
+  {
+    "machine_name": "Ultrasonic Welding Station 3",
+    "issue": "Weld horn showing wear pattern. Pull test failures increasing on nickel tab connections.",
+    "status": "In Progress",
+    "maintenance_date": "2026-06-11"
+  },
+  {
+    "machine_name": "Electrolyte Fill Station",
+    "issue": "Vacuum pump seal leak reducing hold vacuum from 30 kPa to 18 kPa.",
+    "status": "Completed",
+    "maintenance_date": "2026-06-08"
+  },
+  {
+    "machine_name": "Formation Chamber 2",
+    "issue": "Cooling water flow reduced. Cell temperatures exceeding 45°C during 0.05C charge cycles.",
+    "status": "Scheduled",
+    "maintenance_date": "2026-06-16"
+  },
+  {
+    "machine_name": "Jelly Roll Winder 1",
+    "issue": "Alignment camera calibration expired. Separator offset warnings increasing on shift logs.",
+    "status": "In Progress",
+    "maintenance_date": "2026-06-13"
+  },
+  {
+    "machine_name": "Heat Seal Line",
+    "issue": "Seal bar temperature uneven across width. Left zone 8°C cooler than center.",
+    "status": "Completed",
+    "maintenance_date": "2026-06-07"
+  },
+  {
+    "machine_name": "Aging Room HVAC",
+    "issue": "Compressor efficiency degraded. Room temperature exceeding 27°C during peak summer load.",
+    "status": "Scheduled",
+    "maintenance_date": "2026-06-17"
+  }
+]

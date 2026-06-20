@@ -1,0 +1,178 @@
+Make a targeted UI refinement update to the existing CellSage AI frontend.
+
+IMPORTANT:
+Do not rebuild the app.
+Do not regenerate the whole project.
+Do not change routing, mock data, or API logic.
+Do not rewrite unrelated pages.
+Only make focused UI updates with minimal file changes.
+Preserve the current theme and working structure.
+
+GOAL:
+Fix the floating elements on the landing page, remove the entire “Agentic RAG Architecture” block, and make the hero section feel more premium, slightly 3D, and smoother with fade animations.
+
+PRIORITY TASKS
+
+1. FIX FLOATING ELEMENTS IN HERO
+   The current floating stat/info elements around the hero preview card are not placed well.
+
+Update them so they:
+
+* do not overlap awkwardly
+* do not touch card edges
+* do not go outside the visible container
+* look intentional and polished
+* are positioned cleanly around the main preview card
+* stack properly on tablet/mobile
+* have consistent spacing
+* have subtle floating animation, not excessive movement
+
+Floating elements currently include items like:
+
+* Confidence 91%
+* High Severity
+* Evidence Sources 5
+* Root Cause Found
+
+Make them look like premium mini glass info cards.
+Use better placement with relative/absolute positioning only where safe.
+On smaller screens, either reduce them or reposition them cleanly so the layout never breaks.
+
+2. REMOVE ENTIRE ARCHITECTURE SECTION
+   Completely remove the full block/section related to:
+
+Agentic RAG Architecture
+End-to-end AI pipeline powering every investigation
+
+And all of its contents, including:
+
+* User Interaction Layer
+* Manufacturing Engineer Query
+* Agent Orchestration Layer
+* Data Sources
+* RAG Pipeline
+* Data & Storage
+* Tools & Services
+* Output
+* the explanatory caption about scattered manufacturing data and Agentic AI / RAG
+
+Delete the full section from the UI and from the page layout.
+Do not leave empty space behind.
+After removing it, rebalance the landing page sections so the page still feels complete and premium.
+
+3. IMPROVE THE LANDING PAGE AFTER REMOVAL
+   After removing the architecture block, make the landing page feel more refined and complete by improving the sections that remain.
+
+Keep or improve:
+
+* Hero section
+* Feature cards
+* AI Investigation Pipeline section
+
+If needed, slightly enhance spacing and section transitions so the landing page still feels rich and not empty.
+
+4. MAKE THE HERO AREA FEEL MORE 3D / PREMIUM
+   Do not use actual heavy 3D libraries.
+   Create a visual sense of depth using CSS only.
+
+Use:
+
+* layered glass panels
+* stronger depth shadows
+* subtle gradient edge highlights
+* slight perspective feel on the hero preview card
+* inner glow / soft outer glow
+* slightly elevated floating mini cards
+* better z-index layering
+* soft blur depth in background
+
+Possible visual techniques:
+
+* backdrop blur
+* multiple shadow layers
+* slight rotate/translate transforms on hover
+* gradient overlay
+* subtle border glow
+* depth using scale and opacity
+
+The result should feel premium and slightly 3D, but still clean and professional.
+
+5. ADD SOFT FADE / MICRO ANIMATIONS
+   Add subtle animations only.
+
+Use CSS or Tailwind transitions only.
+Do not add any animation libraries.
+
+Add:
+
+* fade-in + slide-up for hero text
+* fade-in for CTA buttons
+* soft fade/slide for feature cards
+* subtle float animation for mini hero stat cards
+* gentle reveal animation for the hero preview card
+* hover lift for glass cards
+* subtle button glow hover
+* smooth section entrance
+
+Animation rules:
+
+* professional and lightweight
+* no excessive movement
+* no childish effects
+* no lag
+* no large bouncing effects
+* use durations around 250ms to 700ms
+* keep mobile performance smooth
+
+6. KEEP THE UI CLEAN
+   Maintain:
+
+* premium dark background
+* glassmorphism
+* blue/cyan accents
+* clean navigation
+* strong readability
+* no overlap
+* no broken mobile view
+
+Do not add clutter.
+Do not add new big sections.
+Do not add unnecessary text.
+
+SPECIFIC IMPLEMENTATION NOTES
+
+Likely files to update:
+
+* src/pages/Home.jsx
+* src/index.css
+* possibly small hero-related component file if one exists
+
+Do not modify:
+
+* services/api.js unless needed for an error
+* mockData.js unless necessary
+* routing unless broken
+
+LANDING PAGE EXPECTATION AFTER UPDATE
+The landing page should:
+
+* have a cleaner hero section
+* have properly placed floating mini cards
+* no architecture block at all
+* feel more premium and visually deeper
+* include subtle fade animations
+* still look simple, elegant, and high-end
+
+FINAL CHECK
+After updating:
+
+1. Run the app.
+2. Check that the landing page has no overlapping floating elements.
+3. Confirm the entire architecture block is fully removed.
+4. Confirm spacing looks balanced after removal.
+5. Confirm the hero section feels more premium and slightly 3D.
+6. Confirm fade animations work smoothly.
+7. Confirm mobile/tablet layout is still good.
+8. Do not change unrelated app logic.
+
+Make only these targeted UI refinements and keep the update efficient.

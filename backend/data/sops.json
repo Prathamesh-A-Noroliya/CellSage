@@ -1,0 +1,52 @@
+[
+  {
+    "sop_code": "SOP-001",
+    "title": "Electrode Coating Thickness Control",
+    "content": "Electrode coating thickness for NMC cathode and graphite anode must remain within ±2% of the target specification (cathode: 85 µm, anode: 72 µm). Coating weight deviation beyond tolerance requires immediate line stop and recalibration of the slot-die coater. Verify coating uniformity across the full web width every 30 minutes using inline beta gauge sensors."
+  },
+  {
+    "sop_code": "SOP-002",
+    "title": "Dry Room Humidity Control",
+    "content": "Relative humidity in electrode processing dry rooms must remain below 60% at all times. If humidity exceeds 60% for more than 15 minutes, halt coating and calendering operations. Moisture ingress into NMC cathode material causes lithium carbonate formation and capacity fade. Log humidity readings from dew point sensors every 10 minutes."
+  },
+  {
+    "sop_code": "SOP-003",
+    "title": "Electrode Drying Temperature",
+    "content": "Cell drying oven temperature must remain between 80°C and 90°C during the primary drying phase. Temperature excursions below 80°C result in incomplete solvent removal from NMP-based slurries. Temperature above 90°C risks binder degradation and electrode cracking. Monitor thermocouple readings at inlet, center, and outlet zones."
+  },
+  {
+    "sop_code": "SOP-004",
+    "title": "Tab Welding Parameters",
+    "content": "Ultrasonic tab welding for nickel tab-to-busbar connections requires weld energy between 800–1200 J with clamp pressure of 0.4–0.6 MPa. Weld pull strength must exceed 15 N. Insufficient weld energy causes high contact resistance; excessive energy damages separator and causes internal short risk. Inspect weld nugget diameter under microscope per AQL 0.65."
+  },
+  {
+    "sop_code": "SOP-005",
+    "title": "Electrolyte Filling Procedure",
+    "content": "LP57 electrolyte (1M LiPF6 in EC:EMC 3:7) filling must occur in dew point below -40°C environment. Fill volume tolerance is ±1.5% of cell design capacity. Under-filling causes dry spots and capacity loss; over-filling increases swelling risk during formation. Vacuum-assisted filling cycle: 30 kPa vacuum hold for 60 seconds, then pressurized fill at 0.2 bar."
+  },
+  {
+    "sop_code": "SOP-006",
+    "title": "Formation Cycling Protocol",
+    "content": "Initial formation cycling uses CC-CV charge to 4.2V at 0.05C followed by discharge to 2.75V at 0.05C for three cycles. Cell temperature during formation must not exceed 45°C. Abnormal voltage plateau or excessive heat generation indicates SEI formation issues or internal defect. Formation capacity retention must be ≥98% of design capacity before grading."
+  },
+  {
+    "sop_code": "SOP-007",
+    "title": "Calendering Pressure Settings",
+    "content": "Electrode calendering line pressure must be maintained at 45–55 MPa for cathode and 35–45 MPa for anode rolls. Porosity target: cathode 25–30%, anode 30–35%. Over-calendering reduces ionic conductivity; under-calendering causes electrode delamination during winding. Monitor roll gap and line tension continuously."
+  },
+  {
+    "sop_code": "SOP-008",
+    "title": "Cell Sealing Integrity",
+    "content": "Pouch cell heat-seal temperature must be 180–190°C with seal dwell time of 3–5 seconds. Seal width minimum 3 mm with no pinholes or wrinkles. Perform helium leak test on sample cells at 1×10⁻⁶ mbar·L/s threshold. Seal failure allows electrolyte leakage and moisture ingress during aging."
+  },
+  {
+    "sop_code": "SOP-009",
+    "title": "Separator Alignment Tolerance",
+    "content": "Ceramic-coated PE separator alignment during jelly roll winding must be within ±0.5 mm of center position relative to electrode edges. Misalignment causes lithium plating on anode edges and dendrite formation. Z-fold and winding tension must be synchronized; tension deviation beyond ±5% triggers automatic stop."
+  },
+  {
+    "sop_code": "SOP-010",
+    "title": "Aging Room Environmental Conditions",
+    "content": "Post-formation aging room temperature must be 25±2°C with humidity below 45%. Aging duration minimum 72 hours before final capacity grading. Cells stored outside temperature/humidity limits may show false pass on C-rate testing. Log environmental data from room-level sensors every hour and correlate with batch traceability records."
+  }
+]

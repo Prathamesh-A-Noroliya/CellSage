@@ -1,0 +1,112 @@
+[
+    {
+      "maintenance_id": "MNT-2025-001",
+      "equipment_id": "COAT-LN1-03",
+      "equipment_name": "Slot-Die Coating Machine - Line 1",
+      "date": "2025-01-12",
+      "maintenance_type": "Preventive",
+      "description": "Quarterly slot-die lip inspection and cleaning; replaced worn shim seals.",
+      "technician": "R. Patel",
+      "downtime_hours": 4.5,
+      "next_due_date": "2025-04-12"
+    },
+    {
+      "maintenance_id": "MNT-2025-002",
+      "equipment_id": "WELD-LN1-07",
+      "equipment_name": "Ultrasonic Tab Welder - Line 1",
+      "date": "2025-01-20",
+      "maintenance_type": "Corrective",
+      "description": "Replaced worn welding horn after amplitude drift detected during pull-test sampling; recalibrated to 60-65 micron spec.",
+      "technician": "S. Iyer",
+      "downtime_hours": 2.0,
+      "next_due_date": "2025-02-20"
+    },
+    {
+      "maintenance_id": "MNT-2025-003",
+      "equipment_id": "DRY-RM-02",
+      "equipment_name": "Dry Room Dehumidification Unit",
+      "date": "2025-02-05",
+      "maintenance_type": "Corrective",
+      "description": "Repaired desiccant wheel motor causing short-cycling; restored dew point control to below -40C.",
+      "technician": "M. Krishnan",
+      "downtime_hours": 6.0,
+      "next_due_date": "2025-05-05"
+    },
+    {
+      "maintenance_id": "MNT-2025-004",
+      "equipment_id": "SLIT-LN3-01",
+      "equipment_name": "Precision Slitting Machine - Line 3",
+      "date": "2025-02-14",
+      "maintenance_type": "Preventive",
+      "description": "Scheduled blade replacement at 50,000m cumulative cut length; verified burr height below 10 micron spec.",
+      "technician": "A. Nair",
+      "downtime_hours": 3.0,
+      "next_due_date": "2025-05-14"
+    },
+    {
+      "maintenance_id": "MNT-2025-005",
+      "equipment_id": "CAL-LN2-04",
+      "equipment_name": "Roll Press Calender - Line 2",
+      "date": "2025-03-01",
+      "maintenance_type": "Corrective",
+      "description": "Recalibrated thermal compensation system after roll gap drift caused electrode thickness variation.",
+      "technician": "R. Patel",
+      "downtime_hours": 5.0,
+      "next_due_date": "2025-06-01"
+    },
+    {
+      "maintenance_id": "MNT-2025-006",
+      "equipment_id": "FORM-LN2-11",
+      "equipment_name": "Formation Cycling Tester Bank - Line 2",
+      "date": "2025-03-18",
+      "maintenance_type": "Preventive",
+      "description": "Routine calibration of charge/discharge current channels; verified 0.2C formation current accuracy across all 48 channels.",
+      "technician": "S. Iyer",
+      "downtime_hours": 8.0,
+      "next_due_date": "2025-06-18"
+    },
+    {
+      "maintenance_id": "MNT-2025-007",
+      "equipment_id": "WELD-LN3-05",
+      "equipment_name": "Fiber Laser Welder - Line 3",
+      "date": "2025-04-02",
+      "maintenance_type": "Corrective",
+      "description": "Restored laser power setpoint to 800-1000W range after incorrect recipe load caused weld splatter defects; added recipe lockout.",
+      "technician": "M. Krishnan",
+      "downtime_hours": 2.5,
+      "next_due_date": "2025-07-02"
+    },
+    {
+      "maintenance_id": "MNT-2025-008",
+      "equipment_id": "HVAC-CLN-09",
+      "equipment_name": "Cleanroom HEPA Filtration Unit",
+      "date": "2025-04-20",
+      "maintenance_type": "Preventive",
+      "description": "Replaced HEPA filters overdue for change; particle count restored to Class 100,000 cleanroom spec.",
+      "technician": "A. Nair",
+      "downtime_hours": 3.5,
+      "next_due_date": "2025-10-20"
+    },
+    {
+      "maintenance_id": "MNT-2025-009",
+      "equipment_id": "GRADE-LN3-02",
+      "equipment_name": "Capacity Grading Tester - Line 3",
+      "date": "2025-05-10",
+      "maintenance_type": "Corrective",
+      "description": "Recalibrated current sensors after drift caused capacity binning mismatches outside 2% tolerance.",
+      "technician": "R. Patel",
+      "downtime_hours": 4.0,
+      "next_due_date": "2025-06-10"
+    },
+    {
+      "maintenance_id": "MNT-2025-010",
+      "equipment_id": "MIX-LN1-01",
+      "equipment_name": "Planetary Slurry Mixer - Line 1",
+      "date": "2025-05-28",
+      "maintenance_type": "Preventive",
+      "description": "Inspected mixing blades and inline 100-micron slurry filter; replaced filter to prevent slot-die nozzle clogging.",
+      "technician": "S. Iyer",
+      "downtime_hours": 3.0,
+      "next_due_date": "2025-08-28"
+    }
+  ]
