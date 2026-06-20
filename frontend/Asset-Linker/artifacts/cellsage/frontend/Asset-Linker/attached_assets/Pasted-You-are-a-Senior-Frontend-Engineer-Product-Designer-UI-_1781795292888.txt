@@ -1,0 +1,871 @@
+You are a Senior Frontend Engineer, Product Designer, UI/UX Architect, and Replit AI Agent.
+
+Build a complete, production-quality React frontend for my hackathon project called CellSage AI.
+
+This is not a normal student project. Build it like a serious enterprise AI SaaS manufacturing intelligence platform.
+
+IMPORTANT EXECUTION RULES:
+
+1. Build the actual working frontend inside this Replit project.
+2. Do not only give instructions.
+3. Do not create a small demo.
+4. Create real React code with proper components, pages, routing, mock data, API service layer, responsive UI, and charts.
+5. Install all required packages.
+6. Configure Tailwind CSS correctly.
+7. Run the project.
+8. Fix all errors.
+9. Make sure the app works on every route.
+10. Make the final result GitHub-ready and demo-ready.
+
+PROJECT NAME:
+CellSage AI
+
+PROJECT TYPE:
+Agentic AI Investigator / AI Copilot for EV Battery Manufacturing Root Cause Analysis
+
+PROJECT DESCRIPTION:
+CellSage AI helps EV battery manufacturing engineers investigate production failures automatically. Instead of manually searching SOP documents, quality manuals, maintenance records, sensor logs, and historical failure reports for hours, CellSage AI uses agentic AI, RAG retrieval, evidence tracing, historical failure analysis, confidence scoring, and report generation to reduce investigation time from hours to minutes.
+
+CORE USER GOAL:
+A manufacturing engineer should be able to ask:
+“Why did Batch EV-1024 fail capacity testing?”
+
+Then the platform should return:
+
+1. Investigation summary
+2. Root cause
+3. Confidence score
+4. Evidence sources
+5. Corrective actions
+6. Preventive actions
+7. Professional investigation report
+8. Historical investigation reference
+
+MY ROLE:
+Frontend Developer
+
+BUILD ONLY:
+React frontend
+Landing page
+Dashboard
+Chat UI
+Investigation page
+History page
+Report page
+Charts
+Mock data
+API-ready service layer
+
+DO NOT BUILD:
+Authentication
+Backend
+Database
+Real LLM logic
+Real vector database
+Payment system
+Admin panel
+Advanced animation system
+
+TECH STACK:
+Use:
+React
+Vite
+Tailwind CSS
+React Router
+Axios
+Recharts
+Lucide React Icons
+
+Required dependencies:
+react-router-dom
+axios
+recharts
+lucide-react
+
+If the project is empty, create a Vite React project.
+If Tailwind is not configured, configure it completely.
+Use JavaScript JSX files, not TypeScript.
+
+FINAL REQUIRED ROUTES:
+/
+/investigation
+/dashboard
+/history
+/report
+
+ROUTING:
+Use React Router.
+Use a persistent app shell layout for internal pages.
+Use a professional sidebar and top navbar.
+
+FOLDER STRUCTURE:
+Create this structure exactly unless a small reusable helper is necessary:
+
+src/
+components/
+Navbar.jsx
+Sidebar.jsx
+ChatBox.jsx
+SummaryCard.jsx
+EvidenceCard.jsx
+RecommendationCard.jsx
+RootCauseCard.jsx
+FailureDistributionChart.jsx
+RootCausePieChart.jsx
+InvestigationTrendChart.jsx
+ArchitectureDiagram.jsx
+KpiCard.jsx
+StatusBadge.jsx
+ConfidenceBar.jsx
+pages/
+Home.jsx
+Investigation.jsx
+Dashboard.jsx
+History.jsx
+Report.jsx
+services/
+api.js
+data/
+mockData.js
+App.jsx
+main.jsx
+index.css
+
+DESIGN GOAL:
+Make the UI look like:
+OpenAI Dashboard
+Notion
+Palantir Foundry
+Industrial analytics platform
+Enterprise manufacturing intelligence software
+
+The product should feel professional, investor-demo-ready, and hackathon-submission-ready.
+
+Avoid:
+Generic student project styling
+Plain white pages
+Cartoon UI
+Random gradients
+Oversized empty spaces
+Overlapping cards
+Broken mobile layout
+Unclear hierarchy
+Fake-looking dashboard
+Unprofessional icons
+Unaligned sections
+
+DESIGN SYSTEM:
+Theme:
+Dark professional enterprise AI dashboard.
+
+Colors:
+Main background: #0B1220
+Sidebar background: #111827
+Card background: #1F2937
+Secondary card background: #111827
+Primary blue: #3B82F6
+Success green: #22C55E
+Warning amber: #F59E0B
+Error red: #EF4444
+Text primary: #FFFFFF
+Text secondary: #9CA3AF
+Soft border: rgba(255,255,255,0.08)
+
+Use:
+Rounded cards
+Subtle borders
+Clean spacing
+Compact dashboard density
+Professional icons
+Readable tables
+Responsive grids
+Blue highlights
+Dark cards
+Small badges
+Confidence progress bars
+Enterprise-style data panels
+
+Do not use a light UI as the main app theme. The main app must be dark.
+
+GLOBAL LAYOUT:
+Internal pages should use:
+Left sidebar
+Top navbar
+Main content area
+
+Sidebar navigation:
+Home
+Investigation
+Dashboard
+History
+Reports
+
+Use Lucide icons.
+Highlight active route.
+Sidebar should work on desktop and not break on mobile.
+On mobile, allow the sidebar to stack or collapse cleanly.
+
+Navbar:
+Show current page title.
+Show subtitle:
+AI Manufacturing Investigator
+Show status badge:
+Mock API Ready
+
+PAGE 1: HOME PAGE
+
+Build a professional landing page for CellSage AI.
+
+Hero section:
+Title:
+CellSage AI
+
+Subtitle:
+Agentic AI Investigator for EV Battery Manufacturing
+
+Description:
+Accelerate root-cause analysis using AI-powered investigation, retrieval-augmented generation, historical failure analysis, evidence tracing, and automated investigation reports.
+
+Primary CTA:
+Start Investigation
+Navigate to /investigation.
+
+Secondary CTA:
+View Dashboard
+Navigate to /dashboard.
+
+Hero visual:
+Create a right-side enterprise dashboard preview card showing:
+Batch: EV-1024
+Failure Type: Capacity Testing Failure
+Confidence: 91%
+Primary Root Cause: Coating thickness variation
+Evidence: SOP + Sensor Log + Historical Failure + Maintenance Record
+Severity: High
+Status: Investigation Completed
+
+Feature section:
+Create 4 professional feature cards:
+
+1. Root Cause Analysis
+   Description:
+   Identify likely manufacturing failure causes using AI-assisted investigation workflows.
+
+2. RAG Knowledge Retrieval
+   Description:
+   Retrieve relevant SOPs, maintenance records, quality manuals, sensor logs, and historical incidents.
+
+3. Historical Failure Analysis
+   Description:
+   Compare current batch failures against previous EV battery production issues and recurring defect patterns.
+
+4. Automated Investigation Reports
+   Description:
+   Generate structured reports with findings, evidence, confidence scores, and recommended actions.
+
+Architecture section:
+Create a section called:
+Agentic RAG Architecture
+
+This section should visually explain the CellSage workflow using cards and arrows. Do not use an image file. Build the architecture using React cards, icons, lines/arrows, and responsive layout.
+
+Architecture flow:
+
+1. User Interaction Layer
+
+* Ask Question
+* Dashboard
+* History
+* Download Report
+
+2. Manufacturing Engineer Query
+   Example:
+   “Why did Batch EV-1024 fail capacity testing?”
+
+3. Agent Orchestration Layer
+   Use 6 agent cards:
+
+* Orchestrator Agent
+* RAG Retrieval Agent
+* Sensor Analysis Agent
+* Historical Analysis Agent
+* Root Cause Agent
+* Report Generation Agent
+
+4. Data Sources
+   Show:
+
+* SOPs & Work Instructions
+* Maintenance Logs
+* Production / Sensor Data
+* Quality Reports
+* Historical Failure Reports
+
+5. RAG Pipeline
+   Show:
+   Document Ingestion → Text Chunking → Embeddings → Vector Store
+
+6. Data & Storage
+   Show:
+   PostgreSQL
+   File Storage
+   ChromaDB
+
+7. Tools & Services
+   Show:
+   Llama 3.1
+   LangChain
+   Pandas
+   Plotly / Visualizations
+
+8. Output
+   Show:
+
+* Root Cause
+* Evidence & References
+* Recommended Actions
+* Confidence Score
+* Investigation Report
+
+9. Report Preview
+   Show a small report card:
+   Investigation Report
+   Batch EV-1024
+   Likely Cause: Electrode coating thickness variation
+   Confidence: 91%
+
+Add small caption:
+CellSage AI turns scattered manufacturing data and documents into actionable intelligence using Agentic AI and RAG.
+
+How It Works section:
+Ask Question → Retrieve Evidence → Analyze Sensor Data → Compare History → Identify Root Cause → Recommend Action → Generate Report
+
+PAGE 2: INVESTIGATION PAGE
+
+Build a ChatGPT-style investigation interface.
+
+Layout:
+Desktop:
+Left: conversation thread and input box
+Right: investigation insights panel
+
+Mobile:
+Stack conversation first, insights below.
+
+The interface should feel like an AI investigation workspace, not a simple form.
+
+Default suggested query:
+Why did Batch EV-1024 fail capacity testing?
+
+Input placeholder:
+Ask an investigation question, e.g. Why did Batch EV-1024 fail capacity testing?
+
+When the user submits:
+
+1. Display the user message.
+2. Show loading text:
+   Investigating manufacturing evidence...
+3. Then display AI Investigation Report.
+
+AI Investigation Report content:
+Batch ID: EV-1024
+Failure Type: Capacity Testing Failure
+
+Investigation Summary:
+Batch EV-1024 failed capacity validation after abnormal coating thickness variation and humidity deviation were detected during electrode preparation and drying stages.
+
+Root Cause:
+The primary root cause is electrode coating thickness variation, likely caused by calibration drift in Coating Line A and humidity levels exceeding the allowed SOP threshold.
+
+Confidence:
+91%
+
+Severity:
+High
+
+Evidence Sources:
+
+1. SOP-001: Electrode coating thickness tolerance must remain within ±2%.
+2. SOP-002: Humidity must remain below 60% during electrode preparation.
+3. Historical Case EV-1001: Similar capacity failure linked to coating variation.
+4. Maintenance Log: Coating Line A calibration overdue by 10 days.
+5. Sensor Reading: Humidity reached 72%, temperature reached 36°C, coating thickness deviation was +8%.
+
+Recommendations:
+Corrective Actions:
+
+* Recalibrate Coating Line A.
+* Reinspect affected electrode sheets.
+* Repeat capacity testing on retained samples.
+* Validate humidity-control system.
+
+Preventive Actions:
+
+* Add automated coating thickness drift alerts.
+* Schedule stricter preventive maintenance.
+* Add humidity threshold alerts before batch release.
+* Create automated batch risk scoring.
+
+Right-side Investigation Insights Panel:
+Show:
+Batch ID: EV-1024
+Failure Type: Capacity Failure
+Confidence Score: 91%
+Severity: High
+Primary Cause: Coating Thickness Variation
+Evidence Count: 5
+Recommended Actions: 8
+Status: Completed
+
+Confidence should be shown with a progress bar.
+Color logic:
+Above 80 = green
+60 to 80 = amber
+Below 60 = red
+
+Also show small evidence source chips:
+SOP
+Sensor Log
+Maintenance
+Historical Failure
+Quality Record
+
+API behavior:
+Try calling POST /investigate using services/api.js.
+If backend is unavailable, use mock response.
+The UI must not crash.
+
+PAGE 3: DASHBOARD PAGE
+
+Build an executive manufacturing investigation dashboard.
+
+Top KPI cards:
+
+1. Total Investigations: 128
+   Trend: +18 this month
+
+2. Average Confidence: 87%
+   Trend: +4.2% vs previous month
+
+3. Critical Failures: 14
+   Trend: 5 open high-severity cases
+
+4. Open Investigations: 9
+   Trend: 3 awaiting evidence review
+
+Each KPI card should include:
+Icon
+Label
+Value
+Trend text
+Small badge if useful
+
+Main dashboard cards:
+
+Investigation Summary Card:
+Batch ID: EV-1024
+Failure Type: Capacity Testing Failure
+Confidence: 91%
+Status: Investigation Completed
+Production Line: Coating Line A
+
+Root Cause Card:
+Primary Cause: Electrode coating thickness variation
+Severity: High
+Impact: Reduced cell capacity and inconsistent active material distribution
+Contributing Factors:
+
+* Humidity deviation
+* Calibration drift
+* Delayed maintenance
+
+Evidence Card:
+SOP References:
+
+* SOP-001 Coating Thickness Tolerance
+* SOP-002 Humidity Control
+* SOP-003 Cell Drying Temperature
+
+Historical Incidents:
+
+* EV-1001 Capacity Failure
+* EV-1012 Coating Defect
+* EV-1018 Humidity Excursion
+
+Maintenance Records:
+
+* Coating Line A calibration overdue
+* Drying Chamber B inspection pending
+
+Recommendations Card:
+Corrective Actions:
+
+* Recalibrate Coating Line A
+* Reinspect electrode coating quality
+* Repeat capacity validation
+
+Preventive Actions:
+
+* Add humidity threshold alerts
+* Automate maintenance escalation
+* Introduce batch-level risk scoring
+
+Analytics charts:
+Use Recharts.
+
+Chart 1:
+Failure Distribution Bar Chart
+Data:
+Capacity Failure: 42
+Internal Resistance: 28
+Thermal Instability: 18
+Welding Defect: 15
+Electrolyte Leakage: 10
+
+Chart 2:
+Root Cause Categories Pie Chart
+Data:
+Process Deviation: 38
+Machine Calibration: 27
+Environmental Conditions: 20
+Material Quality: 15
+
+Chart 3:
+Investigation Trends Line Chart
+Data:
+Jan: 18
+Feb: 22
+Mar: 26
+Apr: 31
+May: 29
+Jun: 34
+
+Charts must:
+Be readable on dark background
+Have responsive containers
+Have useful tooltips
+Use professional colors
+Not overflow cards
+
+PAGE 4: HISTORY PAGE
+
+Create a historical investigations page with a professional searchable table.
+
+Columns:
+Batch ID
+Issue
+Root Cause
+Confidence
+Severity
+Date
+Status
+
+Required features:
+Search bar
+Pagination
+Sort by date
+Sort by confidence
+Status badges
+Confidence badges
+Responsive horizontal scroll on small screens
+
+Use at least 15 realistic mock rows.
+
+Mock rows should include examples like:
+EV-1024 | Capacity Failure | Coating thickness variation | 91% | High | 2026-06-18 | Completed
+EV-1023 | Internal Resistance Spike | Welding pressure variation | 86% | Medium | 2026-06-17 | Completed
+EV-1022 | Thermal Instability | Drying temperature deviation | 89% | High | 2026-06-16 | Completed
+EV-1021 | Electrolyte Leakage | Sealing pressure inconsistency | 82% | Medium | 2026-06-15 | Completed
+EV-1020 | Low Voltage Output | Cathode material inconsistency | 78% | Medium | 2026-06-14 | Under Review
+EV-1019 | Formation Cycle Delay | Electrolyte wetting inconsistency | 84% | Medium | 2026-06-13 | Completed
+EV-1018 | Humidity Excursion | Dry room humidity deviation | 88% | High | 2026-06-12 | Completed
+EV-1017 | Tab Welding Defect | Welding current instability | 81% | Medium | 2026-06-11 | Completed
+EV-1016 | Capacity Fade | Cathode material contamination | 76% | High | 2026-06-10 | Under Review
+EV-1015 | Seal Integrity Failure | Sealing pressure drift | 83% | Medium | 2026-06-09 | Completed
+EV-1014 | High Self-Discharge | Separator contamination | 79% | Medium | 2026-06-08 | Under Review
+EV-1013 | Thermal Hotspot | Formation temperature deviation | 85% | High | 2026-06-07 | Completed
+EV-1012 | Coating Defect | Slurry viscosity variation | 90% | High | 2026-06-06 | Completed
+EV-1011 | Electrolyte Fill Error | Fill volume inconsistency | 77% | Medium | 2026-06-05 | Completed
+EV-1010 | Resistance Drift | Aging chamber temperature variation | 80% | Medium | 2026-06-04 | Completed
+
+Search should filter by:
+Batch ID
+Issue
+Root cause
+Severity
+Status
+
+Pagination:
+5 rows per page
+Previous button
+Next button
+Current page indicator
+Disable buttons when needed
+
+PAGE 5: REPORT PAGE
+
+Create a professional investigation report page suitable for PDF export.
+
+The report should look like an enterprise-grade report inside the web app.
+
+Top controls:
+Export Report button
+Back to Investigation button
+
+Report title:
+CellSage AI Investigation Report
+
+Subtitle:
+EV Battery Manufacturing Root Cause Analysis
+
+Metadata cards:
+Report ID: CS-RPT-2026-1024
+Batch ID: EV-1024
+Generated Date: 18 June 2026
+Investigation Status: Completed
+Confidence: 91%
+Severity: High
+
+Report sections:
+
+1. Executive Summary
+   CellSage AI investigated the capacity testing failure in Batch EV-1024 using SOP references, historical incident data, maintenance records, and sensor readings. The investigation identified electrode coating thickness variation as the most likely root cause, supported by humidity deviation and overdue calibration records.
+
+2. Investigation Findings
+
+* Capacity test results were below acceptance threshold.
+* Humidity exceeded the SOP limit during electrode preparation.
+* Coating thickness deviation reached +8%.
+* Similar historical incidents were linked to coating calibration drift.
+* Coating Line A maintenance was overdue.
+
+3. Evidence Sources
+
+* SOP-001: Electrode coating thickness tolerance ±2%.
+* SOP-002: Humidity must remain below 60%.
+* Historical Failure EV-1001: Similar capacity failure caused by coating variation.
+* Maintenance Record: Coating Line A calibration overdue by 10 days.
+* Sensor Log: Humidity 72%, temperature 36°C, coating deviation +8%.
+
+4. Root Cause Analysis
+   The primary root cause is coating thickness variation caused by calibration drift in Coating Line A. Environmental humidity deviation likely contributed to inconsistent electrode quality and reduced cell capacity.
+
+5. Corrective Actions
+
+* Recalibrate Coating Line A immediately.
+* Quarantine affected electrode sheets.
+* Repeat capacity testing on sample cells.
+* Inspect humidity control systems.
+
+6. Preventive Actions
+
+* Add automated sensor alerts.
+* Introduce predictive maintenance checks.
+* Add pre-release batch risk scoring.
+* Link SOP deviations with investigation workflows.
+
+7. Confidence Assessment
+   CellSage AI assigns a 91% confidence score based on strong alignment between SOP violations, historical failure patterns, sensor anomalies, and maintenance records.
+
+Make the report printable-looking but still consistent with the dark enterprise theme.
+Use clean section dividers, metadata badges, and readable spacing.
+
+SERVICES / API INTEGRATION
+
+Create:
+src/services/api.js
+
+Use Axios.
+
+Base URL:
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+
+Implement:
+investigateQuery(query)
+getHistory()
+generateReport(payload)
+
+API endpoints:
+POST /investigate
+GET /history
+POST /report
+
+Behavior:
+Use try/catch.
+If backend call fails, return mock data.
+Never allow UI to crash.
+Console warn backend fallback, but keep UI clean.
+Add loading states where API calls happen.
+
+MOCK DATA
+
+Create:
+src/data/mockData.js
+
+Include:
+mockInvestigation
+rawHistory
+failureDistributionData
+rootCausePieData
+investigationTrendData
+kpiData
+reportData
+
+Use realistic EV battery manufacturing terminology:
+Electrode coating
+Humidity deviation
+Cell drying
+Formation cycling
+Welding pressure
+Electrolyte filling
+Tab welding
+Sealing pressure
+Internal resistance
+Capacity degradation
+Thermal instability
+Calibration drift
+Preventive maintenance
+SOP deviation
+Dry room
+Slurry viscosity
+Formation aging
+Separator contamination
+
+COMPONENT REQUIREMENTS
+
+Sidebar.jsx:
+Professional sidebar with CellSage AI branding.
+Add a small subtitle:
+Manufacturing AI Investigator
+Navigation:
+Home
+Investigation
+Dashboard
+History
+Reports
+Use Lucide icons.
+Highlight active route.
+
+Navbar.jsx:
+Show page title.
+Show subtitle:
+AI Manufacturing Investigator
+Show status badge:
+Mock API Ready
+
+KpiCard.jsx:
+Reusable KPI card.
+
+SummaryCard.jsx:
+Reusable investigation summary card.
+
+RootCauseCard.jsx:
+Reusable root cause card showing cause, severity, impact, and contributing factors.
+
+EvidenceCard.jsx:
+Reusable card for SOP references, historical incidents, maintenance records, and sensor logs.
+
+RecommendationCard.jsx:
+Reusable card for corrective and preventive actions.
+
+ChatBox.jsx:
+Reusable chat interface component.
+
+ConfidenceBar.jsx:
+Reusable progress bar with color logic.
+
+StatusBadge.jsx:
+Reusable badge for severity, confidence, and status.
+
+ArchitectureDiagram.jsx:
+Reusable React-based architecture diagram component used on the Home page.
+
+Chart components:
+FailureDistributionChart.jsx
+RootCausePieChart.jsx
+InvestigationTrendChart.jsx
+
+RESPONSIVENESS
+
+Desktop:
+Sidebar left
+Main content right
+Dashboard cards in grid
+Charts in grid
+Investigation chat split layout
+
+Tablet:
+Cards wrap cleanly
+Charts stack if needed
+
+Mobile:
+Content stacks vertically
+No overlapping
+Tables scroll horizontally
+Buttons remain accessible
+Sidebar does not break layout
+
+QUALITY CHECKLIST BEFORE FINISHING
+
+Before completing the task:
+
+1. Run npm install if needed.
+2. Run npm run dev or npm run build.
+3. Fix all import errors.
+4. Fix all React Router errors.
+5. Fix Tailwind config errors.
+6. Fix Recharts rendering errors.
+7. Fix responsive layout issues.
+8. Make sure these routes load successfully:
+   /
+   /investigation
+   /dashboard
+   /history
+   /report
+9. Make sure no page is blank.
+10. Make sure all navigation links work.
+11. Make sure mock fallback works when backend is unavailable.
+12. Make sure the final UI is professional, dark, clean, and enterprise-grade.
+
+FINAL UI POLISH REQUIREMENTS
+
+The final app must have:
+Consistent spacing
+Consistent card padding
+Consistent border radius
+Professional dark dashboard look
+No broken mobile layout
+No overlapping
+No huge unnecessary empty sections
+Readable chart labels
+Readable table content
+Good hover states
+Good status badges
+Clear typography hierarchy
+Manufacturing-specific language
+Enterprise SaaS feel
+Demo-ready presentation quality
+
+FINAL OUTPUT EXPECTATION
+
+At the end, the Replit project should contain:
+
+1. Complete working React frontend.
+2. All required files and components.
+3. Tailwind configured.
+4. React Router working.
+5. Mock data working.
+6. Axios API service ready.
+7. Dashboard charts working.
+8. Investigation chat working.
+9. History search/pagination/sort working.
+10. Report page complete.
+11. Architecture section included on Home page.
+12. No build errors.
+13. No blank routes.
+14. GitHub-ready code.
+
+Do not stop after partial implementation.
+Do not ask unnecessary questions.
+Make the best design and engineering decisions.
+Complete the frontend fully.

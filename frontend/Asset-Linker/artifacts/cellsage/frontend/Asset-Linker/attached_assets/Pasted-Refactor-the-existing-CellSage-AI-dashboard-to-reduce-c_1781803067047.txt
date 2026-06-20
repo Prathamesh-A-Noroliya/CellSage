@@ -1,0 +1,239 @@
+Refactor the existing CellSage AI dashboard to reduce clutter by splitting it into two clean pages: Dashboard and Analytics.
+
+IMPORTANT:
+Do not rebuild the whole app.
+Do not create a new project.
+Do not change existing mock data unless required.
+Do not remove useful dashboard content permanently.
+Do not break existing routes.
+Do not mention IIT anywhere in the website.
+Make targeted changes only.
+
+GOAL:
+The current Dashboard page looks too messy and cluttered. Divide the content into two pages so navigation feels cleaner and the UI looks more professional.
+
+NEW STRUCTURE:
+
+1. Dashboard page
+   Route:
+   /dashboard
+
+Purpose:
+High-level executive overview only.
+
+Keep only the most important content:
+
+* Page header
+* KPI cards
+* Current Priority Investigation
+* Investigation Summary Card
+* Root Cause Card
+* Evidence Card
+* Recommendations Card
+
+Dashboard should feel clean, spacious, and executive.
+
+2. New Analytics page
+   Route:
+   /analytics
+
+Purpose:
+Detailed visual analytics and deeper investigation intelligence.
+
+Move these items from Dashboard to Analytics:
+
+* Failure Distribution Bar Chart
+* Root Cause Categories Pie Chart
+* Investigation Trends Line Chart
+* Agent Status Card
+* Confidence Breakdown Card
+* Any extra metric panels that make Dashboard feel crowded
+
+SIDEBAR / NAVIGATION UPDATE:
+Add a new sidebar navigation item:
+Analytics
+
+Final sidebar order:
+Home
+Investigation
+Dashboard
+Analytics
+History
+Reports
+
+Use a suitable Lucide icon for Analytics, such as BarChart3, Activity, LineChart, or PieChart.
+
+ROUTING UPDATE:
+Update React Router so this new route works:
+/analytics
+
+Create:
+src/pages/Analytics.jsx
+
+Update:
+src/App.jsx
+src/components/Sidebar.jsx
+
+DASHBOARD PAGE CLEANUP:
+
+Update src/pages/Dashboard.jsx.
+
+Dashboard layout should be simplified:
+
+Top:
+Title:
+Manufacturing Investigation Command Center
+
+Subtitle:
+Executive overview of active investigations, root causes, confidence, and recommended actions.
+
+Top-right buttons:
+New Investigation
+Generate Report
+
+KPI cards:
+Total Investigations: 128
+Average Confidence: 87%
+Critical Failures: 14
+Open Investigations: 9
+
+Below KPI cards:
+Create a balanced 2-column layout on desktop.
+
+Left column:
+
+* Current Priority Investigation Card
+* Root Cause Card
+
+Right column:
+
+* Investigation Summary Card
+* Evidence Card
+* Recommendations Card
+
+Do not show charts on Dashboard anymore.
+Do not show too many cards in one row.
+Add more breathing space.
+Use consistent glassmorphism cards.
+Keep dashboard readable without scrolling too much.
+
+ANALYTICS PAGE DESIGN:
+
+Create src/pages/Analytics.jsx.
+
+Page title:
+Manufacturing Analytics
+
+Subtitle:
+Visual intelligence for failure patterns, root-cause categories, investigation trends, agent activity, and confidence signals.
+
+Top summary cards:
+
+* Most Common Failure: Capacity Failure
+* Dominant Root Cause: Process Deviation
+* Average Confidence: 87%
+* High Severity Cases: 14
+
+Main analytics grid:
+Use clean card sections.
+
+Section 1:
+Failure Distribution
+Include FailureDistributionChart
+
+Section 2:
+Root Cause Categories
+Include RootCausePieChart
+
+Section 3:
+Investigation Trends
+Include InvestigationTrendChart
+
+Section 4:
+Agent Status
+Show:
+Orchestrator Agent: Active
+RAG Retrieval Agent: Completed
+Sensor Analysis Agent: Completed
+Historical Analysis Agent: Completed
+Root Cause Agent: Completed
+Report Agent: Ready
+
+Section 5:
+Confidence Breakdown
+Show progress bars:
+SOP Match: 94%
+Sensor Anomaly Match: 89%
+Historical Similarity: 87%
+Maintenance Correlation: 92%
+
+Section 6:
+Manufacturing Risk Signals
+Add a compact card showing:
+
+* Humidity Deviation: High
+* Coating Drift: High
+* Maintenance Delay: Medium
+* Historical Similarity: Strong
+
+ANALYTICS PAGE STYLE:
+Use the same premium dark glassmorphism style as the rest of the app:
+
+* bg-white/5
+* border-white/10
+* backdrop-blur-xl
+* rounded-2xl
+* subtle hover lift
+* smooth fade-in
+* readable chart labels
+* responsive layout
+
+RESPONSIVENESS:
+Desktop:
+Dashboard should use clean 2-column layout.
+Analytics should use chart grid.
+
+Tablet:
+Cards should wrap naturally.
+
+Mobile:
+Everything should stack vertically.
+Tables and charts should not overflow.
+Sidebar should still work.
+
+MICRO-ANIMATIONS:
+Add subtle animations only:
+
+* Dashboard cards fade/slide in
+* Analytics chart cards fade in
+* Hover lift on cards
+* Progress bars animate fill
+* No heavy animation library
+
+Do not add Framer Motion.
+Use Tailwind transitions and existing CSS keyframes only.
+
+QUALITY RULES:
+After changes:
+
+1. Run the app.
+2. Make sure these routes work:
+   /
+   /investigation
+   /dashboard
+   /analytics
+   /history
+   /report
+3. Make sure Dashboard is much cleaner and less cluttered.
+4. Make sure Analytics contains the moved chart and intelligence content.
+5. Make sure Sidebar highlights Analytics correctly.
+6. Make sure there are no blank pages.
+7. Fix any import errors.
+8. Fix any routing errors.
+9. Fix any chart layout issues.
+10. Preserve the premium dark glassmorphism theme.
+
+FINAL RESULT:
+Dashboard should look like a clean executive overview.
+Analytics should look like a detailed manufacturing intelligence page.
+The app should feel easier to navigate, less cluttered, and more professional.

@@ -1,0 +1,149 @@
+[
+  {
+    "batch_id": "EV-1001",
+    "issue": "Capacity Failure",
+    "sensor_data": "Humidity: 72%, Temperature: 36°C, Coating Thickness: +8%",
+    "root_cause": "Electrode coating thickness variation exceeded SOP-001 tolerance due to slot-die misalignment",
+    "corrective_action": "Recalibrate coating machine slot-die gap and verify beta gauge inline measurements."
+  },
+  {
+    "batch_id": "EV-1002",
+    "issue": "Internal Resistance High",
+    "sensor_data": "Weld Energy: 650 J, Contact Resistance: 12 mΩ, Clamp Pressure: 0.3 MPa",
+    "root_cause": "Insufficient ultrasonic tab weld energy below SOP-004 minimum threshold",
+    "corrective_action": "Increase weld energy to 1000 J and re-qualify welding horn alignment."
+  },
+  {
+    "batch_id": "EV-1003",
+    "issue": "Swelling During Formation",
+    "sensor_data": "Electrolyte Fill: +3.2%, Formation Temp: 52°C, Cell Pressure: 1.8 bar",
+    "root_cause": "Electrolyte over-fill combined with elevated formation temperature",
+    "corrective_action": "Adjust vacuum fill cycle timing and reduce formation charge rate to 0.03C."
+  },
+  {
+    "batch_id": "EV-1004",
+    "issue": "Voltage Mismatch",
+    "sensor_data": "Formation Cycle 2 Voltage Delta: 85 mV, SEI Resistance: elevated",
+    "root_cause": "Incomplete SEI formation due to dry room humidity spike during electrode handling",
+    "corrective_action": "Verify dry room dew point sensors and replace desiccant in electrode storage airlocks."
+  },
+  {
+    "batch_id": "EV-1005",
+    "issue": "Capacity Failure",
+    "sensor_data": "Drying Temp: 74°C, Residual NMP: 850 ppm, Coating Weight: -4%",
+    "root_cause": "Drying oven temperature below SOP-003 minimum caused incomplete solvent removal",
+    "corrective_action": "Recalibrate drying oven thermocouples and extend primary drying phase by 20 minutes."
+  },
+  {
+    "batch_id": "EV-1006",
+    "issue": "Separator Puncture",
+    "sensor_data": "Winding Tension: +12%, Separator Offset: 1.2 mm, Edge Burr: detected",
+    "root_cause": "Electrode edge burr from calendering combined with separator misalignment per SOP-009",
+    "corrective_action": "Inspect calendering rolls for damage and reset winding tension synchronization."
+  },
+  {
+    "batch_id": "EV-1007",
+    "issue": "Leak Test Failure",
+    "sensor_data": "Seal Temp: 175°C, Seal Width: 2.1 mm, Helium Leak Rate: 3.2×10⁻⁶",
+    "root_cause": "Heat seal temperature below SOP-008 specification causing incomplete polymer fusion",
+    "corrective_action": "Increase seal bar temperature to 185°C and verify seal bar pressure uniformity."
+  },
+  {
+    "batch_id": "EV-1008",
+    "issue": "C-Rate Performance Fail",
+    "sensor_data": "Calendering Pressure: 62 MPa, Cathode Porosity: 18%, IR: 45 mΩ",
+    "root_cause": "Over-calendering reduced cathode porosity below SOP-007 acceptable range",
+    "corrective_action": "Reduce calendering line pressure to 50 MPa and re-verify porosity on pilot roll."
+  },
+  {
+    "batch_id": "EV-1009",
+    "issue": "Capacity Fade in Aging",
+    "sensor_data": "Aging Room Temp: 31°C, Humidity: 58%, Capacity Retention: 91%",
+    "root_cause": "Aging room temperature exceeded SOP-010 limit accelerating side reactions",
+    "corrective_action": "Repair aging room HVAC unit and quarantine affected batch for re-grading."
+  },
+  {
+    "batch_id": "EV-1010",
+    "issue": "Internal Short",
+    "sensor_data": "Weld Energy: 1450 J, Separator Damage: yes, Microscopy: nugget penetration",
+    "root_cause": "Excessive ultrasonic weld energy penetrated separator layer per SOP-004",
+    "corrective_action": "Reduce weld energy to 950 J and implement post-weld separator integrity check."
+  },
+  {
+    "batch_id": "EV-1011",
+    "issue": "Capacity Failure",
+    "sensor_data": "Humidity: 68%, Coating Thickness: +5%, Dry Room Dew Point: -35°C",
+    "root_cause": "Moisture exposure during electrode transfer between coating and drying lines",
+    "corrective_action": "Install additional airlock between lines and enforce SOP-002 humidity monitoring."
+  },
+  {
+    "batch_id": "EV-1012",
+    "issue": "Formation Abnormal Heat",
+    "sensor_data": "Formation Temp: 48°C, Voltage Plateau: irregular, Charge Capacity: -6%",
+    "root_cause": "Contaminated electrolyte batch with elevated water content",
+    "corrective_action": "Quarantine electrolyte lot, perform Karl Fischer water content test, switch to backup lot."
+  },
+  {
+    "batch_id": "EV-1013",
+    "issue": "Tab Lift-Off",
+    "sensor_data": "Weld Pull Strength: 9 N, Clamp Pressure: 0.25 MPa, Weld Time: 80 ms",
+    "root_cause": "Tab welding clamp pressure below SOP-004 minimum during high-throughput shift",
+    "corrective_action": "Recalibrate pneumatic clamp system and add inline pull-test sampling."
+  },
+  {
+    "batch_id": "EV-1014",
+    "issue": "Electrolyte Dry Spot",
+    "sensor_data": "Fill Volume: -2.8%, Vacuum Hold: 35 sec, Cell IR: 38 mΩ",
+    "root_cause": "Shortened vacuum hold time in electrolyte filling per SOP-005",
+    "corrective_action": "Restore vacuum hold to 60 seconds and verify fill pump calibration."
+  },
+  {
+    "batch_id": "EV-1015",
+    "issue": "Delamination in Winding",
+    "sensor_data": "Calendering Pressure: 28 MPa, Anode Adhesion: fail, Winding Speed: 12 m/min",
+    "root_cause": "Under-calendering on anode roll caused poor adhesion during high-speed winding",
+    "corrective_action": "Increase anode calendering pressure to 40 MPa per SOP-007 and reduce winding speed."
+  },
+  {
+    "batch_id": "EV-1016",
+    "issue": "Capacity Failure",
+    "sensor_data": "Humidity: 65%, Temperature: 28°C, Coating Thickness: +3%",
+    "root_cause": "Gradual slot-die wear causing coating thickness drift over production run",
+    "corrective_action": "Replace slot-die insert and implement shift-end coating weight verification."
+  },
+  {
+    "batch_id": "EV-1017",
+    "issue": "Self-Discharge High",
+    "sensor_data": "Seal Integrity: marginal, Aging OCV Drop: 15 mV/day, Moisture: 52 ppm",
+    "root_cause": "Micro-leak in pouch seal allowing moisture ingress during aging",
+    "corrective_action": "Increase seal dwell time to 4 seconds and add 100% helium leak screening."
+  },
+  {
+    "batch_id": "EV-1018",
+    "issue": "Impedance Rise",
+    "sensor_data": "Formation IR: 28 mΩ, Post-Aging IR: 42 mΩ, EIS: SEI growth",
+    "root_cause": "Extended aging at borderline humidity accelerated SEI thickening",
+    "corrective_action": "Tighten aging room humidity control to below 40% and reduce aging time to 72 hours."
+  },
+  {
+    "batch_id": "EV-1019",
+    "issue": "Capacity Failure",
+    "sensor_data": "Humidity: 71%, Coating Thickness: +6%, Line Stop: none",
+    "root_cause": "Operators continued production despite humidity alarm per SOP-002 violation",
+    "corrective_action": "Enforce automatic line interlock on humidity exceedance and retrain operators."
+  },
+  {
+    "batch_id": "EV-1020",
+    "issue": "Voltage Instability",
+    "sensor_data": "Separator Offset: 0.9 mm, Winding Alignment: fail, C-Rate Delta: -12%",
+    "root_cause": "Separator misalignment during jelly roll winding per SOP-009",
+    "corrective_action": "Reset winding alignment cameras and perform manual alignment verification on startup."
+  },
+  {
+    "batch_id": "EV-1024",
+    "issue": "Capacity Failure",
+    "sensor_data": "Humidity: 68%, Temperature: 34°C, Coating Thickness: +7%",
+    "root_cause": "Electrode coating variation and elevated dry room humidity during production",
+    "corrective_action": "Recalibrate coating machine and enforce SOP-002 humidity interlock before line restart."
+  }
+]
