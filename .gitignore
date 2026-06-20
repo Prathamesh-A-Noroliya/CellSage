@@ -224,3 +224,5 @@ build/
 .env.*.local
 .DS_Store
 .vscode/
+
+dist/
